@@ -32,3 +32,30 @@ function typeWriter() {
 }
 
 typeWriter();
+
+//modo noturno
+$('.btn-cb').click(function(){
+    $('html').toggleClass('dark-mode');  
+});
+
+//modo noturno mobile
+$('.mobile-toggle-theme').click(function(){
+    let icon = $(this).find('svg');
+    if($('html').hasClass('dark-mode')){
+        icon.attr('data-icon', 'sun');
+    }else{
+        icon.attr('data-icon', 'moon');
+    }
+    $('html').toggleClass('dark-mode');  
+});
+
+//sidebar
+$('.nav-item').click(function(){
+    $('.nav-item').not($(this)).removeClass( "active" );
+    $(this).addClass('active');
+    if( $(window).width() <= 992){
+        setTimeout(function(){
+            $('.navbar-toggler').trigger('click');
+        }, 300);   
+    }
+});

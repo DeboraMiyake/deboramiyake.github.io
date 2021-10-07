@@ -1,76 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="dark-mode">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Débora Miyake's Portfolio.">
     <title>Débora Miyake</title>
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />    
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/mdb.min.css" />
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#about">              
-            <span class="navbarName">Débora Miyake</span>         
-            <img class="circleImg mx-auto mb-2" src="assets/img/Debora.jpg" alt="Débora Miyake" />              
-        </a>        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        <a class="navbar-brand js-scroll-trigger" href="#about">
+            <span class="navbarName">Débora Miyake</span>
+            <img class="circleImg mx-auto mb-2" src="assets/img/Debora.jpg" alt="Débora Miyake" />
+        </a>
+        <div class="d-flex">
+            <div class="text-white mobile-toggle-theme"><i class="fas fa-moon"></i></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>          
+        </div>
+      
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
-                <li class="nav-item mb-3"><a class="nav-link name">Débora Miyake</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                <li class="mb-3"><span class="nav-link name">Débora Miyake</span></li>
+                <li class="nav-item active"><a class="nav-link" href="#about">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link" href="#education">Educação</a></li>
                 <li class="nav-item"><a class="nav-link" href="#experience">Experiência</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                <li class="mb-3">                 
+                    <div class="toggle-theme">
+                        <div class="button-swt" id="button-switch">
+                            <input type="checkbox" class="btn-cb">
+                            <div class="btn-click"></div>
+                            <div class="toggle-btn-bg"></div>
+                        </div>
+                        <span class="theme-text">Mudar tema</span>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
    
-    <main>      
+    <main>        
         <div class="container">
             <div id="about">
                 <img class="mobileImg mx-auto mb-4" src="assets/img/Debora.jpg" alt="Débora Miyake" />
-
-                <h1 class="aboutName mb-2">Débora Miyake</h1>               
-    
+                <h1 class="aboutName mb-2">Débora Miyake</h1>
                 <h3 class="mb-3" id="textAnimation">Desenvolvedora web.</h3>
-             
                 <a class="links" rel="noopener" target="_blank" href="mailto:deboramyk@gmail.com">
-                    <button type="button" class="btn btn-black btn-lg btn-floating mx-1">
+                    <button type="button" class="btn btn-icon btn-lg btn-floating mx-1">
                         <i class="fas fa-envelope fa-lg"></i>
                     </button>
                 </a>
-    
                 <a class="links" rel="noopener" target="_blank" href="https://web.whatsapp.com/send?phone=5511976529623">
-                    <button type="button" class="btn btn-black btn-lg btn-floating mx-1">
+                    <button type="button" class="btn btn-icon btn-lg btn-floating mx-1">
                         <i class="fas fa-phone fa-lg"></i>
                     </button>
-                </a>    
-            
+                </a>
                 <a class="links" rel="noopener" target="_blank" href="https://github.com/DeboraMiyake">
-                    <button type="button" class="btn btn-black btn-lg btn-floating mx-1">
+                    <button type="button" class="btn btn-icon btn-lg btn-floating mx-1">
                         <i class="fab fa-github fa-lg"></i>
                     </button>
-                </a> 
-                
+                </a>
                 <a class="links" rel="noopener" target="_blank" href="https://www.linkedin.com/in/deboramiyake/">
-                    <button type="button" class="btn btn-black btn-lg btn-floating mx-1">
+                    <button type="button" class="btn btn-icon btn-lg btn-floating mx-1">
                         <i class="fab fa-linkedin fa-lg"></i>
                     </button>
-                </a>  
-    
+                </a>
                 <p class="aboutText">
                     Sou uma desenvolvedora sempre a procura de novos e grandes desafios no competitivo mercado de trabalho do mundo do desenvolvimento de software, amo aprender novas ferramentas e lidar com as pessoas, colaborar com a equipe para chegar em uma solução criativa e eficiente é o melhor jeito de trabalhar!
                 </p>
             </div>
-                
+
             <div id="education" class="pb-4">
-                <h1 class="titles text-uppercase">EDUCAÇÃO</h1>
+                <h1 class="titles text-uppercase"><span>EDUCAÇÃO</span></h1>
                 <div class="descriptionLine">
                     <div class="descriptionItem pb-0">
                         <h3 class="descriptionTitle">Análise e Desenvolvimento de Sistemas</h3>
@@ -78,7 +87,7 @@
                         <span>Ensino Superior - Tecnólogo</span>
                         <p class="date">2019 - Atual </p>
                     </div>
-        
+
                     <div class="descriptionItem pb-0">
                         <h3 class="descriptionTitle">Informática para Internet</h3>
                         <h5>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</h5>
@@ -86,18 +95,17 @@
                         <p class="date">2018 - 2019 </p>
                     </div>
                 </div>
-               
             </div>
-    
+
             <div id="experience" class="pb-4">
-                <h1 class="titles text-uppercase">Experiência</h1>
+                <h1 class="titles text-uppercase"><span>Experiência</span></h1>
                 <div class="descriptionLine">
                     <div class="descriptionItem pb-0">
                         <h3 class="descriptionTitle">Desenvolvedora web</h3>
                         <span>Atuei no desenvolvimento de sistemas de gestão, dashboards, manutenção de e-commerce, agendas e principalmente com um software voltado a pesquisa de mercado, atuando na manutenção das funcionalidades já existentes e também na implementação de novas funcionalidades. Os projetos foram desenvolvidos utilizando PHP, framework CodeIgniter, MySQL, PHPMyAdmin, BootStrap, JavaScript, jQuery, Ajax, JSON, CSS3, HTML5 e protocolos HTTPS e FTP.</span>
                         <p class="date">Janeiro de 2021 - Junho de 2021</p>
                     </div>
-        
+
                     <div class="descriptionItem pb-0">
                         <h3 class="descriptionTitle">Bolsista de Extensão</h3>
                         <h5>Projeto Extracurricular</h5>
@@ -108,53 +116,53 @@
             </div>
 
             <div id="skills" class="pb-4">
-                <h1 class="titles text-uppercase">Habilidades</h1>
+                <h1 class="titles text-uppercase"><span>Habilidades</span></h1>
                 <h4>Linguagens e Ferramentas de Programação</h4>
-                <div class="fa-3x">                           
+                <div class="fa-3x">
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-css3-alt"></i>
                     <i class="fab fa-js"></i>
-                    <i class="fab fa-php"></i>               
+                    <i class="fab fa-php"></i>
                 </div>
 
-               <i class="fas fa-check text-danger"></i> HTML, CSS, MDBootstrap;<br/>
-               <i class="fas fa-check text-danger"></i> JavaScript, Jquery, AJAX;<br/>
-               <i class="fas fa-check text-danger"></i> PHP, Framework CodeIgniter<br/>
-               <i class="fas fa-check text-danger"></i> PHPMyAdmin, MySQL;<br/>
+                <i class="fas fa-check text-danger"></i> HTML, CSS, MDBootstrap;<br />
+                <i class="fas fa-check text-danger"></i> JavaScript, Jquery, AJAX;<br />
+                <i class="fas fa-check text-danger"></i> PHP, Framework CodeIgniter<br />
+                <i class="fas fa-check text-danger"></i> PHPMyAdmin, MySQL;<br />
 
-               <a href="assets/pdf/DeboraMiyakeCV.pdf"><button type="button" class="mt-3 mb-3 btn btn-dark"><i class="fas fa-download"></i> Download CV</button></a>
-            </div>                  
-        </div>          
+                <a href="assets/pdf/DeboraMiyakeCV.pdf"><button type="button" class="mt-3 mb-3 btn btn-cv"><i class="fas fa-download"></i>Download CV</button></a>
+            </div>
+        </div>
     </main>
 
-    <footer class="text-center bg-light">
+    <footer class="text-center">
         <div class="container text-center text-md-start mt-3 mb-3">
             <div class="row mt-3">
-                <div class="col-md-7 col-lg-7 col-xl-7 mx-auto mt-2 mb-4">        
-                    <h3 class="fw-bold mb-2 name">Débora Miyake</h3>                   
+                <div class="col-md-7 col-lg-7 col-xl-7 mx-auto mt-2 mb-4">
+                    <h3 class="fw-bold mb-2 name">Débora Miyake</h3>
                     <p>Desenvolvedora web</p>
                     <p class="footerText">Uma jovem apaixonada por desenvolvimento de software e muito interessada em design e usabilidade, sempre animada para conhecer ferramentas novas, além de amar aprimorar e aplicar os conhecimentos que já tem!</p>
-                </div>            
-                
+                </div>
+
                 <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-md-0 mt-2 mb-4">
                     <h6 class="text-uppercase fw-bold mb-4 contact">Entre em contato</h6>
                     <a class="links" rel="noopener" target="_blank" href="mailto:deboramyk@gmail.com"><i class="fas fa-envelope me-3"></i>deboramyk@gmail.com</a>
-                    <a class="links" rel="noopener" target="_blank" href="https://github.com/DeboraMiyake"><i class="fab fa-github me-3"></i>DeboraMiyake</a>          
+                    <a class="links" rel="noopener" target="_blank" href="https://github.com/DeboraMiyake"><i class="fab fa-github me-3"></i>DeboraMiyake</a>
                     <a class="links" rel="noopener" target="_blank" href="https://www.linkedin.com/in/deboramiyake/"><i class="fab fa-linkedin me-3"></i>deboramiyake</a>
                     <a class="links" rel="noopener" target="_blank" href="https://web.whatsapp.com/send?phone=5511976529623"><i class="fas fa-phone-alt me-3"></i> (11) 97652-9623</a>
                     <a class="links" rel="noopener" target="_blank" href="#"><i class="fas fa-home me-3"></i>Guarulhos, SP</a>
-                </div>           
+                </div>
             </div>
-        </div>     
+        </div>
         <div class="footer-copyright text-center py-3">2021 | <a href="https://deboramiyake.github.io/">Débora Miyake</a></div>
-    </footer> 
-    
+    </footer>
+
     <button class="up"><i class="fas fa-arrow-up text-white"></i></button>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>    
-    <!-- icons -->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
