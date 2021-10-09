@@ -22,7 +22,7 @@
             <img class="circleImg mx-auto mb-2" src="assets/img/Debora.jpg" alt="Débora Miyake" />
         </a>
         <div class="d-flex">
-            <div class="text-white mobile-toggle-theme"><i class="fas fa-moon"></i></div>
+            <div class="text-white mobile-toggle-theme p-1"><i class="fas fa-moon"></i></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>          
         </div>
       
@@ -98,7 +98,15 @@
             </div>
 
             <div id="experience" class="pb-4">
-                <h1 class="titles text-uppercase"><span>Experiência</span></h1>
+                <div class="row titles">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-9">
+                        <h1 class=" text-uppercase"><span>Experiência</span></h1>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <a download href="assets/pdf/DeboraMiyakeCV.pdf"><button type="button" class="btn btn-cv float-end"><i class="fas fa-download"></i> Download CV</button></a>
+                    </div>
+                </div>
+                             
                 <div class="descriptionLine">
                     <div class="descriptionItem pb-0">
                         <h3 class="descriptionTitle">Desenvolvedora web</h3>
@@ -117,20 +125,74 @@
 
             <div id="skills" class="pb-4">
                 <h1 class="titles text-uppercase"><span>Habilidades</span></h1>
-                <h4>Linguagens e Ferramentas de Programação</h4>
-                <div class="fa-3x">
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-php"></i>
-                </div>
-
-                <i class="fas fa-check text-danger"></i> HTML, CSS, MDBootstrap;<br />
-                <i class="fas fa-check text-danger"></i> JavaScript, Jquery, AJAX;<br />
-                <i class="fas fa-check text-danger"></i> PHP, Framework CodeIgniter<br />
-                <i class="fas fa-check text-danger"></i> PHPMyAdmin, MySQL;<br />
-
-                <a href="assets/pdf/DeboraMiyakeCV.pdf"><button type="button" class="mt-3 mb-3 btn btn-cv"><i class="fas fa-download"></i>Download CV</button></a>
+                <h4>Linguagens e Ferramentas</h4>
+                <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-4">
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                      <div class="card skills text-center" title="HTML">
+                          <span><img src="assets/img/skills/html.png" alt="html5 logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="CSS">
+                            <span><img src="assets/img/skills/css.png" alt="css logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="BootStrap">
+                            <span><img class="teste" src="assets/img/skills/bootstrap.png" alt="bootstrap logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="PHP">
+                            <span><img src="assets/img/skills/php.png" alt="php logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="CodeIgniter">
+                            <span><img src="assets/img/skills/codeigniter.png" alt="codeigniter logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="MYSQL">
+                            <span><img src="assets/img/skills/mysql.png" alt="mysql logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="Firebase">
+                            <span><img src="assets/img/skills/firebase.png" alt="firebase logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="JavaScript">
+                            <span><img src="assets/img/skills/js.png" alt="javascript logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="TypeScript">
+                            <span><img src="assets/img/skills/typescript.png" alt="typescript logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="AngularJs">
+                            <span><img src="assets/img/skills/angularjs.png" alt="angularjs logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="JQuery">
+                            <span><img src="assets/img/skills/jquery.png" alt="jquery logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="Photoshop">
+                            <span><img src="assets/img/skills/photoshop.png" alt="photoshop logo"/></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                        <div class="card skills text-center" title="Figma">
+                            <span><img src="assets/img/skills/figma.png" alt="figma logo"/></span>
+                        </div>
+                    </div>
+                </div>               
             </div>
         </div>
     </main>
