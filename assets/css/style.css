@@ -1,6 +1,5 @@
 .dark-mode:root {
     --body-color: #242424;
-    --background: none;
     --sidebar-bg: #151515;
     --sidebar-name: #fff;
     --sidebar-name-bg: #363636;
@@ -41,7 +40,7 @@
 
 :root {
     --body-color: #ffffff;
-    --background: url(../../assets/img/header-background.png);
+    --background: url(../../assets/img/header-background.svg);
     --sidebar-bg: #e96262;
     --sidebar-name: #1f1f1f;
     --sidebar-name-bg: #fff;
@@ -89,7 +88,7 @@ body{
     background: var(--background);
     background-color: var(--body-color)!important;
     background-repeat: no-repeat;
-    background-position: 20% 0%;
+    background-position: 100% 0%;
 }
 
 h1, h2, h3, h4, h5, h6, p, span{
