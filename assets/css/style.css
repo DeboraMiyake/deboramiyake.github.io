@@ -212,7 +212,6 @@ h1, h2, h3, h4, h5, h6, p, span{
 }
 
 .aboutText{
-    text-indent: 15px;
     width: 90%;
     padding-top:2rem;
     text-align: justify;
@@ -255,7 +254,6 @@ h1, h2, h3, h4, h5, h6, p, span{
 }
 
 .description{
-    text-indent:15px;
     text-align: justify; 
 }
 
@@ -343,7 +341,6 @@ footer a:hover{
 }
 
 .footerText{
-    text-indent: 15px;
     text-align: justify; 
 }
 
