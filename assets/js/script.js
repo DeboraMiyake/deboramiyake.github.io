@@ -1,19 +1,19 @@
-//Função para mostrar o botão de rolar a tela para cima
+// Função para mostrar o botão de rolar a tela para cima
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if(scroll >= 480){
-        $('.up').addClass('scrollUp');
+        $(".up").addClass("scrollUp");
     }else{
-        $('.up').removeClass('scrollUp');
+        $(".up").removeClass("scrollUp");
     }
 });
 
-//Função para rolar a tela para cima
-$('.up').click(function () {
+// Função para rolar a tela para cima
+$(".up").click(function () {
     $(window).scrollTop(0);
 });
 
-//Função para simular escrita de texto
+// Função para simular escrita de texto
 let i = 0;
 
 let textAnimation = $("#textAnimation");
@@ -33,29 +33,34 @@ function typeWriter() {
 
 typeWriter();
 
-//modo noturno
-$('.btn-cb').click(function(){
-    $('html').toggleClass('dark-mode');  
+// Modo noturno
+$(".btn-cb").click(function(){
+    $("html").toggleClass("dark-mode");  
 });
 
-//modo noturno mobile
-$('.mobile-toggle-theme').click(function(){
-    let icon = $(this).find('svg');
-    if($('html').hasClass('dark-mode')){
-        icon.attr('data-icon', 'sun');
+// Modo noturno mobile
+$(".mobile-toggle-theme").click(function(){
+    let icon = $(this).find("svg");
+    if($("html").hasClass("dark-mode")){
+        icon.attr("data-icon", "sun");
     }else{
-        icon.attr('data-icon', 'moon');
+        icon.attr("data-icon", "moon");
     }
-    $('html').toggleClass('dark-mode');  
+    $("html").toggleClass("dark-mode");  
 });
 
-//sidebar
-$('.nav-item').click(function(){
-    $('.nav-item').not($(this)).removeClass( "active" );
-    $(this).addClass('active');
-    if( $(window).width() <= 992){
-        setTimeout(function(){
-            $('.navbar-toggler').trigger('click');
-        }, 300);   
+// Atualizar menu ativo no evento de scroll da tela
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    $(".nav-item").removeClass("active");
+    if(scroll < 430){
+       $("#nav-about").addClass("active");
+    }else if(scroll >= 430 && scroll < 800){
+        $("#nav-education").addClass("active");
+    }else if(scroll >= 800 && scroll <= 1050){
+        $("#nav-experience").addClass("active");
+    }else if(scroll > 1050){
+        $("#nav-skills").addClass("active")
     }
 });
